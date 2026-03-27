@@ -1,1 +1,168 @@
 "Hello World! Welcome to my website" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ripp Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #0d1117;
+      color: #e6edf3;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 60px;
+      position: sticky;
+      top: 0;
+      background: rgba(13,17,23,0.8);
+      backdrop-filter: blur(10px);
+    }
+
+    header h1 {
+      font-size: 18px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #e6edf3;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #58a6ff;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 60px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero span {
+      color: #58a6ff;
+    }
+
+    .hero p {
+      max-width: 500px;
+      margin-top: 10px;
+      opacity: 0.7;
+    }
+
+    .btn {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      border: 1px solid #58a6ff;
+      color: #58a6ff;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #58a6ff;
+      color: #0d1117;
+    }
+
+    section {
+      padding: 80px 60px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #161b22;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Ripp.dev</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Hi, I'm <span>Ripp</span></h2>
+  <p>Informatics graduate & tech enthusiast focused on UI/UX, development, and data.</p>
+  <a href="#projects" class="btn">View My Work</a>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Saya memiliki minat dalam pengembangan teknologi, desain UI/UX, dan machine learning.
+    Berpengalaman dalam membuat game edukasi, analisis data, dan pengembangan sistem.
+  </p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+
+    <div class="card">
+      <h3>Unity Math Game</h3>
+      <p>Game endless runner dengan sistem soal interaktif.</p>
+    </div>
+
+    <div class="card">
+      <h3>House Price Prediction</h3>
+      <p>Machine learning menggunakan Random Forest & XGBoost.</p>
+    </div>
+
+    <div class="card">
+      <h3>Medical RAG System</h3>
+      <p>Sistem diagnosis awal berbasis Retrieval-Augmented Generation.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Ripp</p>
+</footer>
+
+</body>
+</html>
